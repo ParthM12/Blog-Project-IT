@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <h1>YOUR BLOG</h1>
+</head>
+<body>
+<form  action= '/c11/' method="POST">
+    {% csrf_token %}
+
+    <h1>{{ posts.text }}</h1>
+    <textarea name="comments" id="comments" style="width:49%;height:150px;padding:2%;font-size:1.2em;background:url('../DarknessApp/static/images/comment.jpg');background-position:center center;background-repeat:no-repeat;">
+Enter your comment...
+
+
+
+
+</textarea>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
